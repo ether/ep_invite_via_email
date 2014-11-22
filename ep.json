@@ -1,0 +1,13 @@
+{
+  "parts":[
+    {
+      "name": "invite_via_email",
+      "hooks": {
+        "expressCreateServer": "ep_invite_via_email/server_invite_via_email:expressServer"
+      },
+      "client_hooks": {
+        "postAceInit": "ep_invite_via_email/static/js/invite_via_email:postAceInit"
+      }
+    }
+  ]
+}

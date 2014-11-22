@@ -1,0 +1,35 @@
+{
+  "name": "ep_invite_via_email",
+  "description": "Invite a user to a pad on Etherpad Lite",
+  "version": "0.0.4",
+  "author": {
+    "name": "johnyma22",
+    "email": "john@mclear.co.uk",
+    "url": "John McLear"
+  },
+  "repository" : { "type" : "git", "url" : "https://github.com/JohnMcLear/ep_invite_via_email.git" },
+  "contributors": [],
+  "dependencies": {
+    "emailjs": ">= 0.2.7",
+    "buffertools": ">= 1.0.8"
+  },
+  "engines": {
+    "node": ">= 0.4.1"
+  },
+  "_id": "ep_invite_via_email@0.0.3",
+  "dist": {
+    "shasum": "83f0b27970bb23e7186d77049a0aa1e2e07e0b58",
+    "tarball": "http://registry.npmjs.org/ep_invite_via_email/-/ep_invite_via_email-0.0.3.tgz"
+  },
+  "_from": "ep_invite_via_email@",
+  "readme": "",
+  "maintainers": [
+    {
+      "name": "johnyma22",
+      "email": "john@mclear.co.uk"
+    }
+  ],
+  "directories": {},
+  "_shasum": "83f0b27970bb23e7186d77049a0aa1e2e07e0b58",
+  "_resolved": "https://registry.npmjs.org/ep_invite_via_email/-/ep_invite_via_email-0.0.3.tgz"
+}
