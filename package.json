@@ -1,13 +1,16 @@
 {
   "name": "ep_invite_via_email",
   "description": "Invite a user to a pad on Etherpad Lite",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": {
     "name": "johnyma22",
     "email": "john@mclear.co.uk",
     "url": "John McLear"
   },
-  "repository" : { "type" : "git", "url" : "https://github.com/JohnMcLear/ep_invite_via_email.git" },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JohnMcLear/ep_invite_via_email.git"
+  },
   "contributors": [],
   "dependencies": {
     "emailjs": ">= 0.2.7",
