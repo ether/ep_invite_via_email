@@ -13,8 +13,7 @@
   },
   "contributors": [],
   "dependencies": {
-    "emailjs": ">= 0.2.7",
-    "buffertools": ">= 1.0.8"
+    "emailjs": "3.3.0"
   },
   "engines": {
     "node": ">= 0.4.1"
