@@ -33,5 +33,9 @@
   ],
   "directories": {},
   "_shasum": "83f0b27970bb23e7186d77049a0aa1e2e07e0b58",
-  "_resolved": "https://registry.npmjs.org/ep_invite_via_email/-/ep_invite_via_email-0.0.3.tgz"
+  "_resolved": "https://registry.npmjs.org/ep_invite_via_email/-/ep_invite_via_email-0.0.3.tgz",
+  "funding": {
+    "type": "individual",
+    "url": "http://etherpad.org/"
+  }
 }
