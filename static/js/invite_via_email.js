@@ -11,7 +11,7 @@ exports.postAceInit = function (hook_name, args, cb) {
     ' Your name: <br><input id="youremailnameinput" style="height:24px;width:375px;" type="text" value=""><br>' +
     ' The email address of the person you want to invite: <br><input style="height:24px;width:375px;" id="emailrcptinput" type="text" value=""><br><br>' +
     ' <button class="sendEmailButton" style="height:40px;width:200px;">Send invitation</button>' +
-    '</div>',
+    '</div>'
   );
 
   $('.sendEmailButton').click(() => {
@@ -26,7 +26,7 @@ exports.postAceInit = function (hook_name, args, cb) {
       data,
     }).done(
         (msg) => {
-        },
+        }
     );
     alert('Invitation sent...');
     $('#embed').fadeOut();
