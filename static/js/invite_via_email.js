@@ -3,17 +3,16 @@
 exports.postAceInit = (hookName, args, cb) => {
   // add email invite to then embed div
   $('#embedcode').append(`</div><br><br>
-      <a>Invite someone to this pad:</a>
-      <br><br>
+      <h2>Invite someone to this pad:</h2>
       <div id="emailform">
         Your name: <br>
-        <input id="youremailnameinput" style="height:24px;width:375px;" type="text" value="">
+        <input id="youremailnameinput" type="text" value="">
         <br>
         The email address of the person you want to invite:
         <br>
-        <input style="height:24px;width:375px;" id="emailrcptinput" type="text" value="">
+        <input id="emailrcptinput" type="text" value="">
         <br><br>
-        <button class="sendEmailButton" style="height:40px;width:200px;">Send invitation</button>
+        <button class="sendEmailButton">Send invitation</button>
         </div>`
   );
 
@@ -31,7 +30,11 @@ exports.postAceInit = (hookName, args, cb) => {
         (msg) => {
         }
     );
-    alert('Invitation sent...');
-    $('#embed').fadeOut();
+    $.gritter.add({
+      title: 'Invitation sent...',
+      text: `Email sent to ${email}`,
+      sticky: false,
+    });
+    $('#embed').removeClass('popup-show');
   });
 };
