@@ -1,12 +1,14 @@
-exports.expressServer = function (hook_name, args, cb) {
-  args.app.get('/server_invite_via_email', (req, res) => {
-    console.log(req);
-    // Get the parameters from the POST request
-    const name = req.param('name', null); // the name of the recipient
-    const emailAddy = req.param('email', null); // the email address of the recipient
-    const padurl = req.param('padurl', null); // the url of the pad the recipient is being invited to
+'use strict';
+const email = require('emailjs');
 
-    const email = require('emailjs');
+exports.expressServer = (hookName, args, cb) => {
+  args.app.get('/server_invite_via_email', (req, res) => {
+    // Get the parameters from the POST request
+    // the email address of the recipient
+    const emailAddy = req.param('email', null);
+    // the url of the pad the recipient is being invited to
+    const padurl = req.param('padurl', null);
+
     const SMTPClient = email.SMTPClient;
     const server = new SMTPClient({
       host: 'localhost',
@@ -25,4 +27,5 @@ exports.expressServer = function (hook_name, args, cb) {
       res.send(err || message); // Send the response back to the client
     });
   });
+  cb();
 };

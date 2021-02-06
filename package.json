@@ -1,6 +1,6 @@
 {
   "name": "ep_invite_via_email",
-  "description": "Invite a user to a pad on Etherpad Lite",
+  "description": "Invite a user to a pad on Etherpad",
   "version": "0.0.12",
   "author": {
     "name": "johnyma22",
@@ -16,7 +16,7 @@
     "emailjs": "3.3.0"
   },
   "engines": {
-    "node": ">= 0.4.1"
+    "node": ">=10.17.1"
   },
   "_id": "ep_invite_via_email@0.0.3",
   "dist": {
