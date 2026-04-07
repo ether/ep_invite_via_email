@@ -8,7 +8,7 @@ Explain what your plugin does and who it's useful for.
 ## Example animated gif of usage if appropriate
 
 ## Installing
-npm install ep_invite_via_email
+pnpm run plugins install ep_invite_via_email
 
 or Use the Etherpad ``/admin`` interface.
 
