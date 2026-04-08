@@ -1,4 +1,4 @@
-![Publish Status](https://github.com/ether/ep_invite_via_email/workflows/Node.js%20Package/badge.svg) ![Backend Tests Status](https://github.com/ether/ep_invite_via_email/workflows/Backend%20tests/badge.svg)
+![Publish Status](https://github.com/ether/ep_invite_via_email/workflows/Node.js%20Package/badge.svg) [![Backend Tests Status](https://github.com/ether/ep_invite_via_email/actions/workflows/test-and-release.yml/badge.svg)](https://github.com/ether/ep_invite_via_email/actions/workflows/test-and-release.yml)
 
 [![Travis (.org)](https://api.travis-ci.org/JohnMcLear/ep_invite_via_email.git.svg?branch=develop)](https://travis-ci.org/github/JohnMcLear/ep_invite_via_email.git)
 
