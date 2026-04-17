@@ -2,7 +2,7 @@
 
 [![Travis (.org)](https://api.travis-ci.org/JohnMcLear/ep_invite_via_email.git.svg?branch=develop)](https://travis-ci.org/github/JohnMcLear/ep_invite_via_email.git)
 
-# My awesome plugin README example
+# Invite Collaborators via Email for Etherpad
 Explain what your plugin does and who it's useful for.
 
 ## Example animated gif of usage if appropriate
