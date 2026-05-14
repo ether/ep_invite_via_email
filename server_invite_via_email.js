@@ -4,7 +4,9 @@ const email = require('emailjs');
 const DEFAULT_FROM = 'Etherpad <email-invite@etherpad.org>';
 
 exports.getFromAddress = (pluginSettings = {}) => pluginSettings.from || DEFAULT_FROM;
-const getPluginSettings = () => require('ep_etherpad-lite/node/utils/Settings').ep_invite_via_email || {};
+const getPluginSettings = () => (
+  require('ep_etherpad-lite/node/utils/Settings').ep_invite_via_email || {}
+);
 
 exports.expressServer = (hookName, args, cb) => {
   args.app.get('/server_invite_via_email', (req, res) => {
