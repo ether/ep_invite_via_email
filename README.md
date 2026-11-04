@@ -13,7 +13,18 @@ pnpm run plugins install ep_invite_via_email
 or Use the Etherpad ``/admin`` interface.
 
 ## Settings
-Document settings if any
+Configure the sender used for invitation emails in `settings.json`:
+
+```json
+{
+  "ep_invite_via_email": {
+    "from": "Etherpad Team <noreply@example.com>"
+  }
+}
+```
+
+If omitted, the plugin keeps the existing default sender:
+`Etherpad <email-invite@etherpad.org>`.
 
 ## Testing
 Document how to run backend / frontend tests.
